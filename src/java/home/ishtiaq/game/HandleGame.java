@@ -63,10 +63,11 @@ public class HandleGame {
     }
     
     public void chooseWinner(String message) {
-        OptionsComparer optionsComparer = new OptionsComparer();
+        
         String[] option = message.split(",");
         options.put(option[1], option[2]);  //username, option (R,P,S)
         if (options.size() == circle.size()) {
+            OptionsComparer optionsComparer = new OptionsComparer();
             int[] score = optionsComparer.makeDecision(options);     //int[] score = .makeDecision(options) + compare(String[] compare)
             sendScore(score);
             options.clear(); 
@@ -108,5 +109,6 @@ public class HandleGame {
     
     public void remove(String user) {
         circle.remove(user);
+        options.remove(user);
     }
 }
