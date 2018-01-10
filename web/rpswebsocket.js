@@ -112,14 +112,7 @@ function submitOption() {
     cmd="option," +userName +",";
     tosend = cmd;
     var op = document.getElementById("txtStatus").value;
-    
     tosend += op;
-<<<<<<< HEAD
-        
-=======
-    
-    
->>>>>>> 9145d38e64bdceac420b395f4ba1b4e2bcae42a6
     if ( ( !op.match(/\S/)) || (op.length > 1) ) {
         alert("Enter R, P, or S");
         return false;
