@@ -116,7 +116,7 @@ function submitOption() {
     tosend += op;
     
     
-    if (!op.match(/\S/)) {
+    if ( ( !op.match(/\S/)) || (op.length > 1) ) {
         alert("Enter R, P, or S");
         return false;
     } 
