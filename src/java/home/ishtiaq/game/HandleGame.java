@@ -63,10 +63,6 @@ public class HandleGame {
     }
     
     public void chooseWinner(String message) {
-<<<<<<< HEAD
-=======
-        
->>>>>>> 9145d38e64bdceac420b395f4ba1b4e2bcae42a6
         String[] option = message.split(",");
         options.put(option[1], option[2]);  //username, option (R,P,S)
         if (options.size() == circle.size()) {
